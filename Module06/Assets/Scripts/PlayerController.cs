@@ -10,9 +10,6 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        // _animator = GetComponent<Animator>();
-        // _rigidbody = GetComponent<Rigidbody>();
-
         _moving = false;
     }
 
