@@ -6,7 +6,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject _model;
     [SerializeField] private Animator _animator;
     [SerializeField] private Rigidbody _rigidbody;
-    [SerializeField] private Camera _camera;
+    [SerializeField] private Camera _tpsCamera;
+    [SerializeField] private Camera _fpsCamera;
 
     void Start()
     {
@@ -41,11 +42,12 @@ public class PlayerController : MonoBehaviour
             _model.transform.rotation = Quaternion.Euler(0f, 90f, 0f);
         }
 
+        Vector3 newForward = new Vector3(_tpsCamera.transform.forward.x, 0f, _tpsCamera.transform.forward.z);
+        transform.forward = newForward;
 
         if (_moving)
         {
             _animator.SetFloat("Speed", 1.0f);
-            // _rigidbody.MovePosition(transform.forward);
         }
         else
         {
