@@ -25,25 +25,25 @@ public class PlayerController : MonoBehaviour
             _moving = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            _model.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
-        }
-        else if (Input.GetKeyDown(KeyCode.A))
-        {
-            _model.transform.rotation = Quaternion.Euler(0f, 270f, 0f);
-        }
-        else if (Input.GetKeyDown(KeyCode.S))
-        {
-            _model.transform.rotation = Quaternion.Euler(0f, 180f, 0f);
-        }
-        else if (Input.GetKeyDown(KeyCode.D))
-        {
-            _model.transform.rotation = Quaternion.Euler(0f, 90f, 0f);
-        }
-
         Vector3 newForward = new Vector3(_tpsCamera.transform.forward.x, 0f, _tpsCamera.transform.forward.z);
         transform.forward = newForward;
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            transform.Rotate(0f, 0f, 0f);
+        }
+        else if (Input.GetKey(KeyCode.A))
+        {
+            transform.Rotate(0f, 270f, 0f);
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
+            transform.Rotate(0f, 180f, 0f);
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            transform.Rotate(0f, 90f, 0f);
+        }
 
         if (_moving)
         {
