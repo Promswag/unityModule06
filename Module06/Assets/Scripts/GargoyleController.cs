@@ -8,10 +8,12 @@ public class GargoyleController : MonoBehaviour
     [SerializeField] private SphereCollider _detectionArea;
     static public event Action<Vector3> _alert;
     private Color _lightDefaultColor;
+    private Color _lightOff;
 
     void Start()
     {
         _lightDefaultColor = _light.color;
+        _lightOff = new Color(0, 0, 0, 0);
     }
 
     void OnTriggerEnter(Collider collider)
@@ -23,10 +25,8 @@ public class GargoyleController : MonoBehaviour
     {
         _alert?.Invoke(target);
         _detectionArea.enabled = false;
-        // _light.EnableKeyword("_EMISSION");
-        _light.color = new Color(0, 0, 0, 0);
+        _light.color = _lightOff;
         yield return new WaitForSeconds(3f);
-        // _light.DisableKeyword("_EMISSION");
         _light.color = _lightDefaultColor;
         _detectionArea.enabled = true;
     }
