@@ -15,10 +15,8 @@ public class Key : MonoBehaviour
 
 	void Update()
 	{
-		Debug.Log("?");
 		if (Physics.CheckSphere(transform.position, 1f, 1 << LayerMask.NameToLayer("Player")))
 		{
-			Debug.Log("XD");
 			_image.color = _newColor;
 			enabled = false;
 			gameObject.SetActive(false);

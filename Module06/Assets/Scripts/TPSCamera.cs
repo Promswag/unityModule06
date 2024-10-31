@@ -17,9 +17,9 @@ public class TPSCamera : MonoBehaviour
     void Update()
     {
         orbitOffset = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * _cameraSpeed, Vector3.up) * orbitOffset;
-        // transform.position = Vector3.Lerp(transform.position, _head.position + orbitOffset, 0.1f);
-        transform.position = _head.position + orbitOffset;
-        transform.LookAt(_head.position);
-        // transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(_head.position - transform.position), 0.1f);
+        transform.position = Vector3.Lerp(transform.position, _head.position + orbitOffset, 0.2f);
+        // transform.position = _head.position + orbitOffset;
+        // transform.LookAt(_head.position);
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(_head.position - transform.position), 0.2f);
     }
 }
