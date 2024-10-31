@@ -75,4 +75,12 @@ public class PlayerController : MonoBehaviour
         }
         _lastRotation = transform.rotation;
     }
+
+    void OnTriggerEnter(Collider collider)
+    {
+        if (collider.gameObject.layer == LayerMask.NameToLayer("Ghost"))
+        {
+            Debug.Log("LOL");
+        }
+    }
 }
