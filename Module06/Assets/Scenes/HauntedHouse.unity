@@ -16,17 +16,17 @@ RenderSettings:
   serializedVersion: 9
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  m_FogMode: 3
+  m_FogMode: 2
   m_FogDensity: 0.01
   m_LinearFogStart: 0
-  m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_LinearFogEnd: 50
+  m_AmbientSkyColor: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubtractiveShadowColor: {r: 0, g: 0, b: 0, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44658792, g: 0.49642283, b: 0.5748252, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -217,6 +217,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -260,6 +264,30 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -679,6 +707,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -722,6 +754,30 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1942,6 +1998,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1985,6 +2045,30 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2164,7 +2248,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &130003932
 PrefabInstance:
@@ -4770,6 +4854,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -4813,6 +4901,30 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6475,6 +6587,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -6518,6 +6634,30 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6952,6 +7092,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -6995,6 +7139,30 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7582,6 +7750,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -7625,6 +7797,30 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8473,6 +8669,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -8516,6 +8716,30 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8798,6 +9022,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -8841,6 +9069,30 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9622,7 +9874,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -275, y: -100}
+  m_AnchoredPosition: {x: -275, y: 0}
   m_SizeDelta: {x: 400, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &574944122
@@ -10502,7 +10754,7 @@ Transform:
   - {fileID: 870857747}
   - {fileID: 698661826}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: -18.28, z: 0}
 --- !u!1001 &624654715
 PrefabInstance:
@@ -10515,6 +10767,10 @@ PrefabInstance:
     - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_Name
       value: Light (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
@@ -10559,6 +10815,30 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10656,6 +10936,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -10699,6 +10983,30 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10990,6 +11298,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -11033,6 +11345,30 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11488,7 +11824,7 @@ Transform:
   - {fileID: 1358575181}
   - {fileID: 733065287}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &658028175
 PrefabInstance:
@@ -11576,6 +11912,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -11619,6 +11959,30 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12176,8 +12540,8 @@ Rigidbody:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_ImplicitCom: 0
-  m_ImplicitTensor: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -12902,6 +13266,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -12945,6 +13313,30 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13738,6 +14130,8 @@ GameObject:
   m_Component:
   - component: {fileID: 800933547}
   - component: {fileID: 800933546}
+  - component: {fileID: 800933549}
+  - component: {fileID: 800933548}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -13770,8 +14164,123 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &800933548
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800933545}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.5
+  m_Pitch: 0.6
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &800933549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800933545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fc52996eba974044a158d79d3f1adce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioSource: {fileID: 800933548}
+  _audioClips:
+  - {fileID: 8300000, guid: fe2a425fef070ac46b2fe74bab0ad386, type: 3}
+  - {fileID: 8300000, guid: d26f9d25ea7d38f488c495197cd85a73, type: 3}
+  - {fileID: 8300000, guid: 4e90960b853716648bad3572d087b44a, type: 3}
+  - {fileID: 8300000, guid: ef7818f24f07eda40a21aa1885c7cc98, type: 3}
+  - {fileID: 8300000, guid: d3e4657eacf99e1459859d810cf60b20, type: 3}
 --- !u!1001 &816570045
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13906,7 +14415,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &820581907
 PrefabInstance:
@@ -14108,6 +14617,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -14151,6 +14664,30 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14668,7 +15205,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -14865,6 +15402,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -14908,6 +15449,30 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16367,20 +16932,20 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 1}
   m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
+  m_Range: 10000
+  m_SpotAngle: 1
+  m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_Bias: 2
+    m_NormalBias: 0
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -16425,14 +16990,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 993159686}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &995029215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16531,7 +17096,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &996738795
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16566,7 +17131,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &999117697
 PrefabInstance:
@@ -17844,6 +18409,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -17888,6 +18457,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17909,6 +18502,10 @@ PrefabInstance:
     - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_Name
       value: Light (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
@@ -17953,6 +18550,30 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18738,6 +19359,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -18781,6 +19406,30 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21446,6 +22095,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -21489,6 +22142,30 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23252,17 +23929,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1907171071}
     m_Modifications:
-    - target: {fileID: 351210354743406190, guid: b9b74b07e6b44c3c09d7c6c5b022d012, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 3721307028484100007, guid: b9b74b07e6b44c3c09d7c6c5b022d012, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
     - target: {fileID: 4243477298951481807, guid: b9b74b07e6b44c3c09d7c6c5b022d012, type: 3}
       propertyPath: m_Name
       value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 4243477298951481807, guid: b9b74b07e6b44c3c09d7c6c5b022d012, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6804593744935280776, guid: b9b74b07e6b44c3c09d7c6c5b022d012, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -23361,6 +24034,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -23405,6 +24082,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23429,7 +24130,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2de78e17331d71b49bd26432f0301b13, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2de78e17331d71b49bd26432f0301b13, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24912,6 +25613,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -24955,6 +25660,42 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872914928149712408, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: flickerDuration
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872914928149712408, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: lightIntensityMax
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872914928149712408, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: lightIntensityMin
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25944,6 +26685,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 654409649}
     m_Modifications:
+    - target: {fileID: 407171046178659961, guid: 828be38b25b888b93b51fa274e7487c6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3d19d98e2fe0f3a6f966a351c86e1518, type: 2}
     - target: {fileID: 3818492361803697279, guid: 828be38b25b888b93b51fa274e7487c6, type: 3}
       propertyPath: _image
       value: 
@@ -25996,6 +26741,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5845296994083596967, guid: 828be38b25b888b93b51fa274e7487c6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3d19d98e2fe0f3a6f966a351c86e1518, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26036,7 +26785,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1573588013
 MonoBehaviour:
@@ -27470,6 +28219,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -27513,6 +28266,30 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28334,6 +29111,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -28377,6 +29158,34 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3924353436566493084, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_Shadows.m_Strength
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29127,6 +29936,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -29170,6 +29983,30 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30442,6 +31279,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -30485,6 +31326,30 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30582,6 +31447,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -30625,6 +31494,30 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31451,6 +32344,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -31494,6 +32391,30 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -32333,6 +33254,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -32376,6 +33301,30 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -32621,6 +33570,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -32664,6 +33617,30 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -35280,6 +36257,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -35323,6 +36304,30 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -35814,6 +36819,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -35857,6 +36866,30 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -36000,6 +37033,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1235029715015770, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -36043,6 +37080,30 @@ PrefabInstance:
     - target: {fileID: 4702546749944296, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1398162557086768612, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: MaxDistance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062956784882927344, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3924353436566493084, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_Color.b
@@ -36103,6 +37164,18 @@ PrefabInstance:
     - target: {fileID: 3924353436566493084, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
       propertyPath: m_Shadows.m_Resolution
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872914928149712408, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: flickerDuration
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872914928149712408, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: lightIntensityMax
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872914928149712408, guid: fa833c84b0dbee34b84e6427f78feff3, type: 3}
+      propertyPath: lightIntensityMin
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -36296,7 +37369,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8956703960341832400, guid: 12ed9d7c45942c5f382da00d1364b129, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8956703960341832400, guid: 12ed9d7c45942c5f382da00d1364b129, type: 3}
       propertyPath: m_LocalPosition.x
@@ -36461,7 +37534,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5904093112873903050, guid: f3a79f2bf064b4f3db10ed5a767aa8a2, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5904093112873903050, guid: f3a79f2bf064b4f3db10ed5a767aa8a2, type: 3}
       propertyPath: m_LocalPosition.x
