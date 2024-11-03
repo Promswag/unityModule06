@@ -1,5 +1,4 @@
 using System.Collections;
-using UnityEditor.AssetImporters;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -8,6 +7,7 @@ public class GhostController : MonoBehaviour
     [SerializeField] private NavMeshAgent _self;
     private Vector3 _resetPosition;
     private Vector3 _target;
+    private GameObject _player;
 
     private enum GhostState {
         PATROL,
@@ -18,12 +18,13 @@ public class GhostController : MonoBehaviour
 
     private GhostState _state;
 
-    void Awake()
+    void Start()
     {
         _resetPosition = transform.position;
         _state = GhostState.PATROL;
 
         GargoyleController._alert += MoveTowards;
+		GameManager.Instance._reset += ResetState;
     }
 
     void Update()
@@ -34,6 +35,11 @@ public class GhostController : MonoBehaviour
         }
         else if (_state == GhostState.CHASE)
         {
+            if (_player)
+            {
+                _target = _player.transform.position;
+            }
+            _self.SetDestination(_target);
             if (Vector3.Distance(transform.position, _target) < 0.1f)
             {
                 StartCoroutine(Idle());
@@ -48,15 +54,19 @@ public class GhostController : MonoBehaviour
         }
     }
 
-    void OnTriggerStay(Collider collider)
+    void OnTriggerEnter(Collider collider)
     {
-        _self.SetDestination(collider.transform.position);
-        _state = GhostState.CHASE;
-        StopCoroutine(Idle());
+        if (collider.name == "JohnLemon")
+        {
+            _player = collider.gameObject;
+            _state = GhostState.CHASE;
+            StopCoroutine(Idle());
+        }
     }
 
     void OnTriggerExit(Collider collider)
     {
+        _player = null;
         StartCoroutine(Idle());
     }
 
@@ -78,5 +88,15 @@ public class GhostController : MonoBehaviour
     void OnDestroy()
     {
         GargoyleController._alert -= MoveTowards;
+        GameManager.Instance._reset -= ResetState;
+    }
+
+    void ResetState()
+    {
+        StopCoroutine(Idle());
+        Debug.Log("On ResetState!");
+        transform.position = _resetPosition;
+        _state = GhostState.PATROL;
+        _self.ResetPath();
     }
 }

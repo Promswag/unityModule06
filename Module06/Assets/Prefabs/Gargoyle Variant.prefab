@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d3312d02a690eda48bd6807bf5c78084, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d3312d02a690eda48bd6807bf5c78084, type: 3}
       propertyPath: m_LocalPosition.x
@@ -75,6 +75,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 3896730927272494377}
   m_SourcePrefab: {fileID: 100100000, guid: d3312d02a690eda48bd6807bf5c78084, type: 3}
+--- !u!137 &8956703960338887668 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 13700004, guid: d3312d02a690eda48bd6807bf5c78084, type: 3}
+  m_PrefabInstance: {fileID: 8956703960341968976}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8956703960342068976 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: d3312d02a690eda48bd6807bf5c78084, type: 3}
@@ -92,8 +97,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f15327b87e0c32e2da2b30c8aa55928f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _light: {fileID: 2100000, guid: 98a5d7f03b88cef44932b3206c7bd8db, type: 2}
   _detectionArea: {fileID: 3896730927272494377}
+  _meshRenderer: {fileID: 8956703960338887668}
 --- !u!135 &3896730927272494377
 SphereCollider:
   m_ObjectHideFlags: 0

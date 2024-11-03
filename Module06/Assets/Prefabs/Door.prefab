@@ -176,6 +176,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _doorAnimator: {fileID: 8911579039045082079}
   _audioSource: {fileID: 7556404270004385298}
+  _openDoor: {fileID: 8300000, guid: dfad3a3f1b3680d4186889b58bae8086, type: 3}
+  _unlockDoor: {fileID: 8300000, guid: 4d2ec6b56c3093347bc3c7659bd7a2dc, type: 3}
+  _lockedDoor: {fileID: 8300000, guid: 2e48ecb11cebabf488ef1829c5180e20, type: 3}
 --- !u!95 &8911579039045082079
 Animator:
   serializedVersion: 5
@@ -228,7 +231,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: dfad3a3f1b3680d4186889b58bae8086, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.6
   m_Pitch: 1

@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class GargoyleController : MonoBehaviour
 {
-    [SerializeField] private Material _light;
     [SerializeField] private SphereCollider _detectionArea;
-    static public event Action<Vector3> _alert;
+    [SerializeField] private SkinnedMeshRenderer _meshRenderer;
+    private Material _light;
     private Color _lightOnColor;
     private Color _lightOffColor;
+    static public event Action<Vector3> _alert;
 
     void Start()
     {
+        _light = _meshRenderer.material;
         _lightOnColor = _light.color;
         _lightOffColor = new Color(0, 0, 0, 0);
     }

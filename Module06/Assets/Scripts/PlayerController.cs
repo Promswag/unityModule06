@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 
 public class PlayerController : MonoBehaviour
 {
@@ -8,12 +10,28 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Rigidbody _rigidbody;
     [SerializeField] private Camera _tpsCamera;
     [SerializeField] private Camera _fpsCamera;
+    [SerializeField] private PostProcessVolume _ppv;
+    [SerializeField] private List<GameObject> _nearbyGhosts;
+    [SerializeField] private List<AudioClip> _footSteps;
+
+    private AudioSource _audioSource;
+    private float _timeElapsed = 0;
+    private float _timeToWait = 0;
+    private int _footStepsIndex = 0;
     
     private Quaternion _lastRotation;
+    private float _nearest;
+    private Vector3 _resetPosition;
+    private Quaternion _resetRotation;
 
     void Start()
     {
+        _resetPosition = transform.position;
+        _resetRotation = transform.rotation;
         _moving = false;
+        _nearest = 1000f;
+        GameManager.Instance._reset += ResetState;
+        _audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -23,14 +41,28 @@ public class PlayerController : MonoBehaviour
 
         DirectionHandler();
 
-        if (_moving)
+        _animator.SetBool("Moving", _moving);
+
+        _timeElapsed += Time.deltaTime;
+        if (_moving && _timeElapsed > _timeToWait)
         {
-            _animator.SetFloat("Speed", 1.0f);
+            _timeElapsed = 0;
+            _audioSource.clip = _footSteps[++_footStepsIndex % _footSteps.Count];
+            _timeToWait = _audioSource.clip.length + 0.025f;
+            _audioSource.Play();
         }
-        else
+
+        _nearest = 1000f;
+        foreach(GameObject _ghost in _nearbyGhosts)
         {
-            _animator.SetFloat("Speed", 0.0f);
+            float _distance = Vector3.Distance(_ghost.transform.position, transform.position);
+            if (_distance < _nearest)
+            {
+                _nearest = _distance;
+            }
         }
+
+        _ppv.profile.GetSetting<Vignette>().intensity.value = Mathf.Clamp((2f - _nearest) / 2f, 0f, 1f);
     }
 
     void DirectionHandler()
@@ -80,7 +112,26 @@ public class PlayerController : MonoBehaviour
     {
         if (collider.gameObject.layer == LayerMask.NameToLayer("Ghost"))
         {
-            Debug.Log("LOL");
+            _nearbyGhosts.Add(collider.gameObject);
         }
+    }
+
+    void OnTriggerExit(Collider collider)
+    {
+        if (collider.gameObject.layer == LayerMask.NameToLayer("Ghost"))
+        {
+            _nearbyGhosts.Remove(collider.gameObject);
+        }
+    }
+
+    void ResetState()
+    {
+        Debug.Log("Faint");
+        transform.SetPositionAndRotation(_resetPosition, _resetRotation);
+    }
+
+    void OnDestroy()
+    {
+        GameManager.Instance._reset -= ResetState;
     }
 }
