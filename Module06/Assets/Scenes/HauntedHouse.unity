@@ -1272,7 +1272,7 @@ GameObject:
   - component: {fileID: 64036241}
   - component: {fileID: 64036240}
   - component: {fileID: 64036242}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: FPS Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24834,6 +24834,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4487654485736060, guid: 645ef604d3d32e045b044529dbc554af, type: 3}
   m_PrefabInstance: {fileID: 1385639332}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1409285205
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1409285206}
+  - component: {fileID: 1409285207}
+  m_Layer: 3
+  m_Name: PostProcessVolume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1409285206
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409285205}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 698661826}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1409285207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409285205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 25768296604cb7042bfbc30f3b8deedf, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 1
 --- !u!1001 &1418780596
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39950,6 +39999,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2256150799350498535, guid: 8d2a04703a9e3ba4b9f1b6d490a40eae, type: 3}
+      propertyPath: _ppv
+      value: 
+      objectReference: {fileID: 1409285207}
+    - target: {fileID: 2256150799350498535, guid: 8d2a04703a9e3ba4b9f1b6d490a40eae, type: 3}
       propertyPath: _fpsCamera
       value: 
       objectReference: {fileID: 64036239}
@@ -40313,12 +40366,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: JohnLemon
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6069943655757347821, guid: 8d2a04703a9e3ba4b9f1b6d490a40eae, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2532839949127050461, guid: 8d2a04703a9e3ba4b9f1b6d490a40eae, type: 3}
       insertIndex: -1
       addedObject: {fileID: 64036237}
+    - targetCorrespondingSourceObject: {fileID: 2532839949127050461, guid: 8d2a04703a9e3ba4b9f1b6d490a40eae, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1409285206}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2532839949127219453, guid: 8d2a04703a9e3ba4b9f1b6d490a40eae, type: 3}
       insertIndex: -1
