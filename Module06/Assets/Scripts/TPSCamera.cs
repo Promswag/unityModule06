@@ -8,13 +8,12 @@ public class TPSCamera : MonoBehaviour
     private float _maxDistance;
     [SerializeField] [Range(0.1f, 1f)] private float _minDistance;
     [SerializeField] [Range(0.1f, 1f)] private float _lerpSmooth;
-
     [SerializeField] [Range(0.1f, 10f)] private float _cameraSpeed = 1f;
 
-    void Start()
+    void Awake()
     {
         _orbitOffset = transform.position - _head.position;
-        _orbitOffset.y = 0.1f;
+        // _orbitOffset.y = 0.1f;
         _maxDistance = Vector3.Distance(transform.position, _head.transform.position);
     }
 

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
@@ -24,6 +25,8 @@ public class PlayerController : MonoBehaviour
     private Vector3 _resetPosition;
     private Quaternion _resetRotation;
 
+    private bool _reverse;
+
     void Start()
     {
         _resetPosition = transform.position;
@@ -36,12 +39,12 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        Vector3 newForward = new Vector3(_tpsCamera.transform.forward.x, 0f, _tpsCamera.transform.forward.z);
-        transform.forward = newForward;
+        AdjustForward();
 
         DirectionHandler();
 
         _animator.SetBool("Moving", _moving);
+        _animator.SetBool("Reverse", _reverse);
 
         _timeElapsed += Time.deltaTime;
         if (_moving && _timeElapsed > _timeToWait)
@@ -67,45 +70,79 @@ public class PlayerController : MonoBehaviour
 
     void DirectionHandler()
     {
-        _moving = true;
-        if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D))
+        if (_tpsCamera.enabled)
         {
-            transform.Rotate(0f, 45f, 0f);
+            _reverse = false;
+            _moving = true;
+            if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D))
+            {
+                transform.Rotate(0f, 45f, 0f);
+            }
+            else if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.S))
+            {
+                transform.Rotate(0f, 135f, 0f);
+            }
+            else if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.A))
+            {
+                transform.Rotate(0f, 225f, 0f);
+            }
+            else if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.W))
+            {
+                transform.Rotate(0f, 315f, 0f);
+            }
+            else if (Input.GetKey(KeyCode.W))
+            {
+                transform.Rotate(0f, 0f, 0f);
+            }
+            else if (Input.GetKey(KeyCode.A))
+            {
+                transform.Rotate(0f, 270f, 0f);
+            }
+            else if (Input.GetKey(KeyCode.S))
+            {
+                transform.Rotate(0f, 180f, 0f);
+            }
+            else if (Input.GetKey(KeyCode.D))
+            {
+                transform.Rotate(0f, 90f, 0f);
+            }
+            else
+            {
+                transform.rotation = _lastRotation;
+                _moving = false;
+            }
+            _lastRotation = transform.rotation;
         }
-        else if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.S))
-        {
-            transform.Rotate(0f, 135f, 0f);
+        else {
+            if (Input.GetKey(KeyCode.W))
+            {
+                _moving = true;
+                _reverse = false;
+            }
+            else if (Input.GetKey(KeyCode.S))
+            {
+                _reverse = true;
+                _moving = false;
+            }
+            else
+            {
+                _reverse = false;
+                _moving = false;
+            }
         }
-        else if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.A))
+    }
+
+    void AdjustForward()
+    {
+        if (_tpsCamera.enabled)
         {
-            transform.Rotate(0f, 225f, 0f);
-        }
-        else if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.W))
-        {
-            transform.Rotate(0f, 315f, 0f);
-        }
-        else if (Input.GetKey(KeyCode.W))
-        {
-            transform.Rotate(0f, 0f, 0f);
-        }
-        else if (Input.GetKey(KeyCode.A))
-        {
-            transform.Rotate(0f, 270f, 0f);
-        }
-        else if (Input.GetKey(KeyCode.S))
-        {
-            transform.Rotate(0f, 180f, 0f);
-        }
-        else if (Input.GetKey(KeyCode.D))
-        {
-            transform.Rotate(0f, 90f, 0f);
+            transform.forward = new Vector3(_tpsCamera.transform.forward.x, 0f, _tpsCamera.transform.forward.z);
         }
         else
         {
-            transform.rotation = _lastRotation;
-            _moving = false;
+            transform.forward = new Vector3(_fpsCamera.transform.forward.x, 0f, _fpsCamera.transform.forward.z);
         }
-        _lastRotation = transform.rotation;
+
     }
 
     void OnTriggerEnter(Collider collider)
