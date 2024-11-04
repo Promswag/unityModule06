@@ -126,7 +126,6 @@ public class PlayerController : MonoBehaviour
 
     void ResetState()
     {
-        Debug.Log("Faint");
         transform.SetPositionAndRotation(_resetPosition, _resetRotation);
     }
 

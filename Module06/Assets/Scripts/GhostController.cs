@@ -6,6 +6,7 @@ public class GhostController : MonoBehaviour
 {
     [SerializeField] private NavMeshAgent _self;
     private Vector3 _resetPosition;
+    private Quaternion _resetRotation;
     private Vector3 _target;
     private GameObject _player;
 
@@ -21,6 +22,7 @@ public class GhostController : MonoBehaviour
     void Start()
     {
         _resetPosition = transform.position;
+        _resetRotation = transform.rotation;
         _state = GhostState.PATROL;
 
         GargoyleController._alert += MoveTowards;
@@ -31,7 +33,7 @@ public class GhostController : MonoBehaviour
     {
         if (_state == GhostState.PATROL)
         {
-            //TODO
+            //TODO OR NOT TODO
         }
         else if (_state == GhostState.CHASE)
         {
@@ -94,9 +96,9 @@ public class GhostController : MonoBehaviour
     void ResetState()
     {
         StopCoroutine(Idle());
-        Debug.Log("On ResetState!");
-        transform.position = _resetPosition;
         _state = GhostState.PATROL;
-        _self.ResetPath();
+        _self.enabled = false;
+        transform.SetPositionAndRotation(_resetPosition, _resetRotation);
+        _self.enabled = true;
     }
 }

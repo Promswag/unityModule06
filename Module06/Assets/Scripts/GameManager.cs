@@ -1,6 +1,6 @@
 using System;
+using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,9 +10,13 @@ public class GameManager : MonoBehaviour
     private int _keysInInventory;
     public event Action _reset;
 
-    [SerializeField] private Animator _fadeAnimator;
+    private AudioSource _audioSource;
+    [SerializeField] private Animator _winAnimator;
+    [SerializeField] private Animator _loseAnimator;
     [SerializeField] private GameObject _caughtPanel;
     [SerializeField] private GameObject _wonPanel;
+    [SerializeField] private AudioClip _winAudioClip;
+    [SerializeField] private AudioClip _loseAudioClip;
 
     void Awake()
     {
@@ -25,6 +29,11 @@ public class GameManager : MonoBehaviour
             Instance = this;
             _keysInInventory = 0;
         }
+    }
+
+    void Start()
+    {
+        _audioSource = GetComponent<AudioSource>();
     }
 
     public void AddKeyToInventory()
@@ -43,22 +52,40 @@ public class GameManager : MonoBehaviour
         return _keysInInventory == _keysCount;
     }
 
+    public void Win()
+    {
+        _wonPanel.SetActive(true);
+        _winAnimator.SetTrigger("FadeIn");
+        _audioSource.clip = _winAudioClip;
+        _audioSource.Play();
+        StartCoroutine(Delay());
+    }
+
+    IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(2f);
+        Time.timeScale = 0f;
+    }
+
     public void Caught()
     {
         _caughtPanel.SetActive(true);
-        _fadeAnimator.SetTrigger("FadeIn");
+        _loseAnimator.SetTrigger("FadeIn");
+        _audioSource.clip = _loseAudioClip;
+        _audioSource.Play();
         ResetState();
     }
 
     public void ResetFadeState()
     {
         _caughtPanel.SetActive(false);
-        // _caughtPanel.GetComponent<Image>().color = new Color(0f, 0f, 0f, 1f);
     }
 
-    void Victory()
+    void OnTriggerEnter(Collider collider)
     {
-        _wonPanel.SetActive(true);
-        Time.timeScale = 0f;
+        if (collider.gameObject.layer == LayerMask.NameToLayer("Player"))
+        {
+            Win();
+        }
     }
 }

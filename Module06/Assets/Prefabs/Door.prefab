@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 8911579039045082079}
   - component: {fileID: 6603824787784797283}
   - component: {fileID: 7556404270004385298}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,11 +174,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8745a138f7e3842beb3760e93f306212, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _doorAnimator: {fileID: 8911579039045082079}
-  _audioSource: {fileID: 7556404270004385298}
-  _openDoor: {fileID: 8300000, guid: dfad3a3f1b3680d4186889b58bae8086, type: 3}
-  _unlockDoor: {fileID: 8300000, guid: 4d2ec6b56c3093347bc3c7659bd7a2dc, type: 3}
-  _lockedDoor: {fileID: 8300000, guid: 2e48ecb11cebabf488ef1829c5180e20, type: 3}
+  _unlockDoorClip: {fileID: 8300000, guid: 4d2ec6b56c3093347bc3c7659bd7a2dc, type: 3}
+  _lockedDoorClip: {fileID: 8300000, guid: 2e48ecb11cebabf488ef1829c5180e20, type: 3}
+  _openDoorActiveClip: {fileID: 8300000, guid: c3687d8162a16b643a92b92713a24785, type: 3}
+  _isLocked: 0
 --- !u!95 &8911579039045082079
 Animator:
   serializedVersion: 5
