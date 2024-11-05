@@ -36,6 +36,14 @@ public class GameManager : MonoBehaviour
         _audioSource = GetComponent<AudioSource>();
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
+
     public void AddKeyToInventory()
     {
         _keysInInventory++;

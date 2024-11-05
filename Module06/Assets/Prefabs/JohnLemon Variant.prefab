@@ -1094,9 +1094,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100008, guid: b44f3940c4940544a8c2c6aee5fa086f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5066830644061193680}
-    - targetCorrespondingSourceObject: {fileID: 100008, guid: b44f3940c4940544a8c2c6aee5fa086f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6069943655757347821}
   m_SourcePrefab: {fileID: 100100000, guid: b44f3940c4940544a8c2c6aee5fa086f, type: 3}
 --- !u!95 &2532839949119785781 stripped
 Animator:
@@ -1131,7 +1128,7 @@ MonoBehaviour:
   _rigidbody: {fileID: 1949666900365438750}
   _tpsCamera: {fileID: 0}
   _fpsCamera: {fileID: 0}
-  _ppv: {fileID: 6069943655757347821}
+  _ppv: {fileID: 0}
   _nearbyGhosts: []
   _footSteps:
   - {fileID: 8300000, guid: 9e484ef011cb5f94cba12185ebbaa1be, type: 3}
@@ -1186,20 +1183,3 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.5, y: 1.35, z: 0.5}
   m_Center: {x: 0, y: 0.7, z: 0}
---- !u!114 &6069943655757347821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2532839949127219453}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: 25768296604cb7042bfbc30f3b8deedf, type: 2}
-  isGlobal: 1
-  blendDistance: 0
-  weight: 1
-  priority: 1

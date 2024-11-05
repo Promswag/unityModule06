@@ -133,15 +133,7 @@ public class PlayerController : MonoBehaviour
 
     void AdjustForward()
     {
-        if (_tpsCamera.enabled)
-        {
-            transform.forward = new Vector3(_tpsCamera.transform.forward.x, 0f, _tpsCamera.transform.forward.z);
-        }
-        else
-        {
-            transform.forward = new Vector3(_fpsCamera.transform.forward.x, 0f, _fpsCamera.transform.forward.z);
-        }
-
+        transform.forward = new Vector3(_tpsCamera.transform.forward.x, 0f, _tpsCamera.transform.forward.z);
     }
 
     void OnTriggerEnter(Collider collider)
@@ -163,6 +155,7 @@ public class PlayerController : MonoBehaviour
     void ResetState()
     {
         transform.SetPositionAndRotation(_resetPosition, _resetRotation);
+        _lastRotation = _resetRotation;
     }
 
     void OnDestroy()

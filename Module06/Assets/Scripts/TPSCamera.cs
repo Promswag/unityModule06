@@ -13,7 +13,6 @@ public class TPSCamera : MonoBehaviour
     void Awake()
     {
         _orbitOffset = transform.position - _head.position;
-        // _orbitOffset.y = 0.1f;
         _maxDistance = Vector3.Distance(transform.position, _head.transform.position);
     }
 
@@ -21,7 +20,6 @@ public class TPSCamera : MonoBehaviour
     {
         _orbitOffset = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * _cameraSpeed, Vector3.up) * _orbitOffset;
         transform.position = Vector3.Lerp(transform.position, _head.position + _orbitOffset, _lerpSmooth);
-        // transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(_head.position - transform.position), _lerpSmooth);
         Vector3 dir = CollisionHandler();
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(-dir), _lerpSmooth);
     }

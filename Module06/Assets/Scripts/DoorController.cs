@@ -1,6 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Animations;
 using UnityEngine;
 
 public class DoorController : MonoBehaviour
@@ -8,7 +6,6 @@ public class DoorController : MonoBehaviour
     private Animator _doorAnimator;
     private AudioSource _audioSource;
 
-    // [SerializeField] private List<AudioClip> _openDoorClips;
     [SerializeField] private AudioClip _unlockDoorClip;
     [SerializeField] private AudioClip _lockedDoorClip;
     [SerializeField] private AudioClip _openDoorActiveClip;
@@ -21,8 +18,6 @@ public class DoorController : MonoBehaviour
     {
         _doorAnimator = GetComponent<Animator>();
         _audioSource = GetComponent<AudioSource>();
-        // _openDoorActiveClip = _openDoorClips[Random.Range(0, _openDoorClips.Count)];
-        // DoorTransitionInit();
     }
 
     void Update()
@@ -50,23 +45,6 @@ public class DoorController : MonoBehaviour
             _audioSource.Play();
         }
     }
-
-    // void DoorTransitionInit()
-    // {
-    //     AnimatorOverrideController _overrideController = new (_doorAnimator.runtimeAnimatorController);
-    //     _doorAnimator.runtimeAnimatorController = _overrideController;
-    //     foreach (ChildAnimatorState state in (_overrideController.runtimeAnimatorController as AnimatorController).layers[0].stateMachine.states)
-    //     {
-    //         foreach (AnimatorStateTransition transition in state.state.transitions)
-    //         {
-    //             if (transition.name == "open" || transition.name == "close")
-    //             {
-    //                 transition.duration = _openDoorActiveClip.length;
-    //             }
-    //         }
-    //     }
-    //     _doorAnimator.Rebind();
-    // }
 
     void OnTriggerEnter()
     {
